@@ -1,0 +1,9 @@
+<?php
+
+return [
+    'trello' => [
+        'api-key' => '',
+        'token' => '',
+        'board_id' => 'fzVPOFAL',
+    ],
+];

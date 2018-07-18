@@ -1,0 +1,25 @@
+{
+	"name" : "qbonaventure/discord-website-trello",
+	"license" : "MIT",
+	"authors" : [{
+			"name" : "Quentin Bonaventure",
+			"email" : "quentin@bonaventure.xyz"
+		}
+	],
+	"minimum-stability" : "stable",
+	"autoload" : {
+		"psr-4" : {
+			"FTC\\Trello\\" : "src/"
+		}
+	},
+	"extra" : {
+		"zf" : {
+			"config-provider" : "FTC\\Trello\\ConfigProvider"
+		}
+	},
+	"scripts": {
+	   "post-install-cmd": [
+	       "php -r \"copy('config/trello.local.php.dist', '/app/config/autoload/trello.local.php');\""
+	   ]
+	}
+}
