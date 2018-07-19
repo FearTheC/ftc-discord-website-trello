@@ -53,7 +53,6 @@ class CheckMemberCard implements MiddlewareInterface
                 $memberCard->setName((string) $member->getNickname());
                 $this->cardRepository->save($memberCard);
             }
-//                 var_dump($memberCard->getUrl());
             
             $this->templateRenderer->addDefaultParam(TemplateRendererInterface::TEMPLATE_ALL, 'memberCard', $memberCard);
         }
