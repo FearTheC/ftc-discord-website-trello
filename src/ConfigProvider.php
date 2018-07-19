@@ -30,10 +30,10 @@ class ConfigProvider
             'invokables' => [
             ],
             'factories'  => [
-                FTC\Trello\Middleware\CheckMemberCard::class => FTC\Trello\Container\Middleware\CheckMemberCardFactory::class,
-                FTC\Trello\Middleware\CreateMemberCard::class => FTC\Trello\Container\Middleware\CreateMemberCardFactory::class,
-                FTC\Trello\Model\CardRepository::class => FTC\Trello\Container\Model\CardRepositoryFactory::class,
-                FTC\Trello\Client::class => FTC\Trello\Container\ClientFactory::class,
+                \FTC\Trello\Middleware\CheckMemberCard::class => \FTC\Trello\Container\Middleware\CheckMemberCardFactory::class,
+                \FTC\Trello\Middleware\CreateMemberCard::class => \FTC\Trello\Container\Middleware\CreateMemberCardFactory::class,
+                \FTC\Trello\Model\CardRepository::class => \FTC\Trello\Container\Model\CardRepositoryFactory::class,
+                \FTC\Trello\Client::class => \FTC\Trello\Container\ClientFactory::class,
             ],
         ];
     }

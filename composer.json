@@ -21,5 +21,8 @@
 	   "post-install-cmd": [
 	       "php -r \"copy('config/trello.local.php.dist', '/app/config/autoload/trello.local.php');\""
 	   ]
+	},
+	"require": {
+		"composer/composer": "^1.6"
 	}
 }
